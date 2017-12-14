@@ -1,0 +1,45 @@
+package com.epam.task.notepad;
+
+import java.util.Date;
+
+public class Record {
+
+	private int id;
+	private Date date;
+	private String text;
+	
+	public Record() {
+		
+	}
+	
+	public Record(int id, Date date, String text) {
+		super();
+		this.id = id;
+		this.date = date;
+		this.text = text;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public String toString() {
+		return "{id: " + id + ", date: " + date + ", text: " + text + "}";
+	}
+	
+}
